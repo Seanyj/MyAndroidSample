@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_colorMatrix"
+        app:showAsAction="never"
+        android:title="colorMatrix"/>
+    <item
+        android:id="@+id/action_lighting"
+        app:showAsAction="never"
+        android:title="lighting"/>
+    <item
+        android:id="@+id/action_color_porterDuff"
+        app:showAsAction="never"
+        android:title="porterDuff"/>
+    <item
+        android:id="@+id/action_paint_bitmap"
+        app:showAsAction="never"
+        android:title="bitmap"/>
+
+</menu>

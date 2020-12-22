@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_show_contacts"
+        android:title="show contacts"/>
+    <item
+        android:id="@+id/action_show_calls"
+        android:title="show calls"/>
+    <item
+        android:id="@+id/action_show_SMSes"
+        android:title="show SMSes"/>
+
+</menu>

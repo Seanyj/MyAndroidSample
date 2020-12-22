@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyAdLib</string>
+
+    <!-- ============================ -->
+    <!-- app/activity examples strings -->
+    <!-- ============================ -->
+    <string name="activity_hello_world"> App/Activity/<b>Hello <i>World</i></b></string>
+    <string name="activity_hello_sample">App/Activity/Hello Sample</string>
+    <string name="activity_hello_haha">App/Hello Haha</string>
+    <string name="activity_hello_my">App/Activity2/Hello My</string>
+    <string name="activity_hello_widgets">Widgets/Hello Widgets</string>
+    <string name="activity_hello_root">Hello Root</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_hello_world">HelloWorld</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hello_sample">HelloSample</string>
+    <string name="title_activity_hello_my">HelloMy</string>
+    <string name="title_activity_hello_root">HelloRoot</string>
+    <string name="title_activity_hello_haha">HelloHaha</string>
+    <string name="title_activity_hello_widgets">HelloWidgets</string>
+    
+    
+    <!-- ============================ -->
+    <!-- map examples strings -->
+    <!-- ============================ -->
+    <string name="activity_map">Map/MapDemo</string>
+    <string name="map_locate">locate</string>
+    <string name="map_draw_search">draw</string>
+    <string name="map_clear_draw">clear</string>
+    <string name="map_cancel_draw">cancel</string>
+    
+    <!-- ============================   -->
+    <!-- Widgets test examples strings  -->
+    <!-- ============================   -->
+    <string name="activity_quick_location_right_tool">Widgets/Test/Quick Location Right Tool</string>
+    <string name="activity_listview_with_sidebar">Widgets/Test/ListView with sidebar</string>
+    <string name="hint_search">搜索</string>
+    <string name="search_header">Search</string>
+     <string name="search_new">Search</string>
+
+</resources>

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.seanyj.mysamples">
+
+    <permission
+        android:name="com.seanyj.provider.book"
+        android:protectionLevel="dangerous" />
+
+    <!-- <uses-permission android:name="com.seanyj.provider.book"/> -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- <supports-screens -->
+    <!-- android:anyDensity="true" -->
+    <!-- android:largeScreens="true" -->
+    <!-- android:normalScreens="false" -->
+    <!-- android:resizeable="true" -->
+    <!-- android:smallScreens="true" /> -->
+
+
+    <!-- OpenGLES 2.0 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <uses-library
+            android:name="com.seanyj.will.never.exist"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="abc" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- *******************    components   ****************** -->
+        <activity
+            android:name=".app.components.TestActivity"
+            android:label="App/Components/Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.components.ImmerseActivity"
+            android:label="App/Components/Immerse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.components.ServiceTestActivity"
+            android:label="App/Components/Serivce">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ************** End Components *********************** -->
+
+
+        <!-- ******************* Test *************************** -->
+        <activity
+            android:name=".test.TempActivity"
+            android:label="Temp/Temp"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".test.TestActivity"
+            android:label="Temp/Test"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ********************* End Test ************************** -->
+
+
+        <!-- *****************  CustomView ***************** -->
+        <activity
+            android:name=".customview.view.GeometryActivity"
+            android:label="CustomView/Geometry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.view.CustomViewActivity"
+            android:label="CustomView/make view">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.view.CustomDrawableStateActivity"
+            android:label="CustomView/Drawable State">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.view.TextPaintActivity"
+            android:label="CustomView/Text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.view.MaskFilterActivity"
+            android:label="CustomView/Mask Filter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.view.PathEffectActivity"
+            android:label="CustomView/path Effects">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.view.ShaderActivity"
+            android:label="CustomView/Shader">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.ViewPagerActivity"
+            android:label="CustomView/view pager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.SlideViewTestActivity"
+            android:label="CustomView/slide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.SlideViewTest1Activity"
+            android:label="CustomView/slide1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customview.SlideSwitchTestActivity"
+            android:label="CustomView/switch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ************************* End CustomView ******************** -->
+
+
+        <!-- ******************** Graphic ***************************** -->
+        <activity
+            android:name=".graphic.image.BlurImageActivity"
+            android:label="Graphic/Image/Blur Image">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".graphic.transform.MatrixImageActivity"
+            android:label="Graphic/Transform/image matrix">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".graphic.transform.DrawBitmapMeshActivity"
+            android:label="Graphic/Transform/image matrix">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ******************* End Graphic ************************** -->
+
+
+        <!-- ********************* App/UI ********************************* -->
+        <activity
+            android:name=".app.ui.decor.StatusHideActivity"
+            android:label="App/ui/decor/StatusHide"
+            android:theme="@style/NoActionBarTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.decor.StatusBarHideActivity1"
+            android:label="App/ui/decor/StatusHide1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.decor.StatusTranslucentActivity"
+            android:label="App/ui/decor/Status Translucent"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.decor.StatusTranslucentDrawerActivity"
+            android:label="App/ui/decor/Drawer Status Translucent"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.decor.StatusTranslucentDrawer1Activity"
+            android:label="App/ui/decor/Drawer Status Translucent1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.layout.CoordinatorLayoutActivity"
+            android:label="App/ui/CoordinatorLayout"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.dialog.DialogTestActivity"
+            android:label="App/ui/Dialog Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.views.ProgressBarTestActivity"
+            android:label="App/ui/ProgressBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.NotificationActivity"
+            android:label="App/ui/notification">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.layout.DrawerActivity"
+            android:label="App/ui/DrawerLayout"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.layout.ScrollingActivity"
+            android:label="App/ui/ScrollingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- **************** end App Ui ********************** -->
+
+
+        <!-- *********************** WebView ******************** -->
+        <activity
+            android:name=".webview.WebViewActivity"
+            android:label="webview/WebView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ************************ End WebView *********************** -->
+
+
+        <!-- ************************ Phone ************************ -->
+        <activity
+            android:name=".phone.info.AppInstalledActivity"
+            android:label="phone/info/appInstalled">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".phone.privacy.PrivacyInfoActivity"
+            android:label="phone/privacy/person info">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- *********************** End Phone *********************** -->
+
+
+        <!-- *********************** Media **************************** -->
+        <activity
+            android:name=".media.image.ImageViewActivity"
+            android:label="Media/image/load">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.camera.ImageCaptureActivity"
+            android:label="Media/camera/capture">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.image.ChooseActivity"
+            android:label="Media/image/choose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.camera.GalleryActivity"
+            android:label="Media/image/gallery">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.image.TransformActivity"
+            android:label="Media/image/transform">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.video.VideoViewActivity"
+            android:label="Media/video/VideoView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.image.ColorFilterActivity"
+            android:label="Media/image/ColorFilter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.image.XfermodeActivity"
+            android:label="Media/image/Xfermode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.audio.AudioActivity"
+            android:label="Media/audio/AudioPlay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.audio.MediaRecorderActivity"
+            android:label="Media/audio/MediaRecorder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.audio.AudioRecordActivity"
+            android:label="Media/audio/AudioRecord">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.audio.AudioSynthesisActivity"
+            android:label="Media/audio/AudioSynthesis">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.audio.AudioSynthesis1Activity"
+            android:label="Media/audio/AudioSynthesis1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".media.video.MediaPlayerActivity"
+            android:label="Media/video/VideoMediaPlayer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ************************ end Media ************************ -->
+
+
+        <!-- ************* Animation start ************* -->
+        <activity
+            android:name=".animation.AnimatorTestActivity"
+            android:label="animation/animator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ************* Animation end ******************** -->
+
+
+        <!-- ********************** IPC *************************** -->
+        <service
+            android:name=".ipc.MessengerService"
+            android:process=":messenger" />
+        <service
+            android:name=".ipc.BookService"
+            android:process=":bookService" />
+        <service
+            android:name=".ipc.PoolService"
+            android:process=":poolService" />
+
+        <activity
+            android:name=".ipc.IPCTestActivity"
+            android:label="ipc/IPC Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <!-- ********************** END IPC *************************** -->
+
+
+        <!-- ********************* Legacy ************************* -->
+        <activity
+            android:name=".legacy.PercentLayoutActivity"
+            android:label="Legacy/PercentLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".app.components.MyContentProvider"
+            android:authorities="com.seanyj.mysamples.data"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.seanyj.mysamples.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".app.ui.NotificationOpenActivity" />
+
+        <service
+            android:name=".app.components.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".media.camera.SurfaceViewCameraActivity" />
+
+        <activity
+            android:name=".interaction.CoordinatorLayoutDemo1Activity"
+            android:label="Interaction/CoordinatorLayoutDemo1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".interaction.ScrollDemo1Activity"
+            android:label="Interaction/scroll1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".app.drawable.ShapeTestActivity"
+            android:label="App/Drawable/ShapeTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

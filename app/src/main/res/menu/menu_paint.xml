@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_strike_through"
+        android:title="strike through" />
+
+    <item
+        android:id="@+id/action_underLine"
+        android:title="under line" />
+
+    <item
+        android:id="@+id/action_skewX"
+        android:title="skew x" />
+
+    <item
+        android:id="@+id/action_measure_size"
+        android:title="measure size" />
+
+    <item
+        android:id="@+id/action_serif_italic"
+        android:title="serif italic" />
+
+    <item
+        android:id="@+id/external_font"
+        android:title="external font" />
+
+</menu>

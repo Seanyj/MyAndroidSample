@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="EaseContactList">
+        <attr name="ctsListPrimaryTextColor" format="color"/>
+        <attr name="ctsListPrimaryTextSize" format="dimension"/>
+        <attr name="ctsListShowSiderBar" format="boolean"/>
+        <attr name="ctsListInitialLetterBg" format="reference|color"/>
+        <attr name="ctsListInitialLetterColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PxBlurringView">
+        <attr name="blurRadius" format="integer"/>
+        <attr name="downsampleFactor" format="integer"/>
+        <attr name="overlayColor" format="color"/>
+    </declare-styleable>
+    
+</resources>

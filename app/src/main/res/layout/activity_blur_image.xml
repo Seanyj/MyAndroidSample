@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:max="25" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/scenery1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/originalImageView" />
+
+        <com.seanyj.androidlib.widgets.graphic.BlurringView
+            android:id="@+id/blurring_view"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            app:blurRadius="11"
+            app:downsampleFactor="6"
+            app:overlayColor="#00FFFFFF"/>
+    </FrameLayout>
+</LinearLayout>

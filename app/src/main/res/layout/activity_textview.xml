@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp">
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:alignmentMode="alignMargins"
+        app:columnCount="3"
+        app:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/chatViewButton"
+            android:text="chatView"
+            app:layout_columnWeight="1"/>
+
+        <Button
+            android:text="draw1"
+            app:layout_columnWeight="1"/>
+
+        <Button
+            android:text="draw2"
+            app:layout_columnWeight="1"/>
+
+        <Button
+            android:text="draw3"
+            app:layout_columnWeight="1"/>
+
+        <Button
+            android:text="draw4"
+            app:layout_columnWeight="1"/>
+
+        <Button
+            android:text="draw5"
+            app:layout_columnWeight="1"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>

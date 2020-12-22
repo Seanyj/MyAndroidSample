@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyView">
+        <attr name="my1"/>
+        <attr name="my2" format="string"/>
+    </declare-styleable>
+
+    <attr name="my1" format="string"/>
+
+    <attr name="testStyle" format="reference"/>
+
+    <declare-styleable name="MessageState">
+        <attr name="state_message_unread" format="boolean"/>
+    </declare-styleable>
+</resources>

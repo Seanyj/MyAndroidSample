@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+def support = rootProject.ext.support
+def other = rootProject.ext.other
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.seanyj.mysamples"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+
+        multiDexEnabled true
+
+//        ndk {
+//            abiFilters "x86", "armeabi", "armeabi-v7a"  //输出指定三种abi体系结构下的so库。
+//        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/aidl']
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.squareup.okhttp3:okhttp:' + other.okhttp
+    implementation 'com.squareup.okhttp3:logging-interceptor:' + other.okhttp
+    implementation 'com.squareup.retrofit2:retrofit:' + other.retrofit
+    implementation 'com.squareup.retrofit2:adapter-rxjava:' + other.retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:' + other.retrofit
+    implementation 'io.reactivex:rxjava:' + other.rxjava
+    implementation 'io.reactivex:rxandroid:' + other.rxandroid
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.jakewharton:butterknife:8.7.0'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    testImplementation 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation project(':utilLib')
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.8.0"
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+//    implementation 'com.github.bumptech.glide:glide:3.7.0'
+//    implementation 'com.github.bumptech.glide:annotations:3.7.0'
+//    implementation 'com.github.bumptech.glide:okhttp3-integration:1.5.0@jar'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:3.7.0'
+//    implementation "com.github.bumptech.glide:okhttp3-integration:3.7.0"
+}

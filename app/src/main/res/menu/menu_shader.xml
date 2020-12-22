@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_bitmap_shader"
+        android:title="Bitmap Shader"/>
+
+    <item
+        android:id="@+id/action_linear_gradient"
+        android:title="Linear Gradient"/>
+
+    <item
+        android:id="@+id/action_sweep_gradient"
+        android:title="Sweep Gradient"/>
+
+    <item
+        android:id="@+id/action_radial_gradient"
+        android:title="Radial Gradient"/>
+
+    <item
+        android:id="@+id/action_matrix_translate"
+        android:title="matrix translate"/>
+
+    <item
+        android:id="@+id/action_matrix_rotate"
+        android:title="matrix rotate"/>
+
+    <item
+        android:id="@+id/action_matrix_scale"
+        android:title="matrix scale"/>
+
+    <item
+        android:id="@+id/action_matrix_compose"
+        android:title="matrix compse"/>
+</menu>

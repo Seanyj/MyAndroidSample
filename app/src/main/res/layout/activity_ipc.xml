@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <Button
+        android:id="@+id/messengerTestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Messenger" />
+
+    <Button
+        android:id="@+id/aidlTestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aidl" />
+
+    <Button
+        android:id="@+id/addTestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aidl add book" />
+
+    <Button
+        android:id="@+id/binderPoolBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="binder pool" />
+
+    <Button
+        android:id="@+id/queryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="contentprovider query book" />
+
+</LinearLayout>

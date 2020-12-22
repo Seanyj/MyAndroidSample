@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scenery18"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#F86254"
+            android:text="show"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/scenery17"
+        android:fitsSystemWindows="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#F86254"
+            android:text="button"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

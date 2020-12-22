@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_overlapTop="30dp"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            app:cardElevation="3dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="32dp"
+                android:text="hello world ming tian"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            app:cardElevation="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="200dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="300dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="300dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/design_default_color_error"
+            android:layout_height="300dp"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

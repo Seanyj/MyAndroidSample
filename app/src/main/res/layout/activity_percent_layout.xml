@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_gravity="bottom|left"
+        android:background="@color/message_list_item_background_unread"
+        app:layout_heightPercent="60%"
+        app:layout_widthPercent="60%">
+
+        <TextView
+            android:id="@+id/text1"
+            android:background="@color/colorPrimary"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%" />
+
+        <TextView
+            android:layout_below="@id/text1"
+            android:background="@color/colorAccent"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="80%" />
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+</androidx.percentlayout.widget.PercentFrameLayout>

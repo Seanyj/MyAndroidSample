@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_style">
+        <item>normal</item>
+        <item>full screen</item>
+        <item>custom</item>
+        <item>translucent</item>
+        <item>bottom</item>
+    </string-array>
+</resources>
