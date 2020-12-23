@@ -561,6 +561,16 @@
                 <category android:name="com.seansunyj.intent.category.sample" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".animation.PicZoomActivity"
+            android:label="animation/zoom/Zoom1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
         <!-- ************* Animation end ******************** -->
 
 

@@ -22,6 +22,8 @@ android {
 
         multiDexEnabled true
 
+        vectorDrawables.useSupportLibrary = true
+
 //        ndk {
 //            abiFilters "x86", "armeabi", "armeabi-v7a"  //输出指定三种abi体系结构下的so库。
 //        }
@@ -52,6 +54,7 @@ dependencies {
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
     implementation 'com.squareup.okhttp3:okhttp:' + other.okhttp
     implementation 'com.squareup.okhttp3:logging-interceptor:' + other.okhttp
     implementation 'com.squareup.retrofit2:retrofit:' + other.retrofit
