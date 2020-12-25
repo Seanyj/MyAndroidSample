@@ -1,4 +1,4 @@
-package com.seanyj.mysamples.customview;
+package com.seanyj.mysamples.animation;
 
 import android.graphics.Color;
 import android.os.Bundle;

@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.seanyj.mysamples.graphic.transform.MatrixImageActivity">
+    tools:context="com.seanyj.mysamples.media.image.MatrixImageActivity">
 
     <view
         android:id="@+id/imageView"
-        class="com.seanyj.mysamples.graphic.transform.MatrixImageActivity$MatrixImageView"
+        class="com.seanyj.mysamples.media.image.MatrixImageActivity$MatrixImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="matrix"/>

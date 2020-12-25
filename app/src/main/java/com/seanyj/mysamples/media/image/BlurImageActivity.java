@@ -1,4 +1,4 @@
-package com.seanyj.mysamples.graphic.image;
+package com.seanyj.mysamples.media.image;
 
 import android.annotation.TargetApi;
 import android.content.Context;

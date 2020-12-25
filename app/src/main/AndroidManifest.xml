@@ -204,15 +204,7 @@
                 <category android:name="com.seansunyj.intent.category.sample" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".customview.ViewPagerActivity"
-            android:label="CustomView/view pager">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="com.seansunyj.intent.category.sample" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".customview.SlideViewTestActivity"
             android:label="CustomView/slide">
@@ -243,35 +235,7 @@
         <!-- ************************* End CustomView ******************** -->
 
 
-        <!-- ******************** Graphic ***************************** -->
-        <activity
-            android:name=".graphic.image.BlurImageActivity"
-            android:label="Graphic/Image/Blur Image">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="com.seansunyj.intent.category.sample" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".graphic.transform.MatrixImageActivity"
-            android:label="Graphic/Transform/image matrix">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.seansunyj.intent.category.sample" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".graphic.transform.DrawBitmapMeshActivity"
-            android:label="Graphic/Transform/image matrix">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.seansunyj.intent.category.sample" />
-            </intent-filter>
-        </activity>
-        <!-- ******************* End Graphic ************************** -->
 
 
         <!-- ********************* App/UI ********************************* -->
@@ -548,6 +512,34 @@
                 <category android:name="com.seansunyj.intent.category.sample" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".media.image.BlurImageActivity"
+            android:label="Media/image/Blur Image">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.image.MatrixImageActivity"
+            android:label="Media/image/image matrix">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.image.DrawBitmapMeshActivity"
+            android:label="Media/image/DrawBitmapMesh">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
         <!-- ************************ end Media ************************ -->
 
 
@@ -565,6 +557,15 @@
         <activity
             android:name=".animation.PicZoomActivity"
             android:label="animation/zoom/Zoom1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.seansunyj.intent.category.sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".animation.ViewPagerActivity"
+            android:label="animation/view pager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

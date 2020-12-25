@@ -1,4 +1,4 @@
-package com.seanyj.mysamples.graphic.transform;
+package com.seanyj.mysamples.media.image;
 
 import android.content.Context;
 import android.graphics.Bitmap;
